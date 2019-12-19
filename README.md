@@ -4,6 +4,8 @@ My first Hackintosh was built in 2008 or 2009 and I only remember that it was ve
 
 [Version 2](#version-2) and [Version 3](#version-3-pcpartpicker-link) first of all were built for the iOS and macOS development. So it's stability and work predictability was a key requirement. After all of these years using Hackintosh for the development I only can say that it worth it.
 
+In this guide only the latest build of Hackintosh will be described.
+
 ## Table of Content
 1. 👷 [The builds](#the-builds)
 2. 📀 [Make installation media](#make-installation-media)
