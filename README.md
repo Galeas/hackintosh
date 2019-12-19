@@ -10,7 +10,7 @@ My first Hackintosh was built in 2008 or 2009 and I only remember that it was ve
 5. 🔮 [Clover configuration](#clover-configuration)
 6. 🛠 [Fix CPU Type in About This Mac](#fix-cpu-type-in-about-this-mac)
 7. ✅ [What works](#what-works)
-8. 🤬 [What doesn't work](#what-doesn't-work)
+8. 🤬 [What doesn't work](#what-doesnt-work)
 9. 🔥 [Benchmarks](#benchmarks)
 
 ## The builds
@@ -369,7 +369,7 @@ For some reason, About This Mac and System Report do not properly identify the p
 * iMessage (with [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/))
 * Intel's QuickSync
 * HEVC
-* Wireless communications (because **Broadcom BCM94360** is used in real iMac and supports natively)
+* Wireless communications (because **Broadcom BCM94360** is used in a real iMacs and supported natively)
    - WiFi
    - Bluetooth LE
    - Handoff
