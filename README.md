@@ -2,7 +2,7 @@
 
 My first Hackintosh was built in 2008 or 2009 and I only remember that it was very similar to the Frankestein's monster: Core 2 Duo CPU, some kind of AGP GPU, 4 GB of RAM. Neverthless it was able to run latest of iAtkos builds of OS X Tiger and vanilla OS X Leopard. The second version of Hackintosh was bult in 2013 and it's final EFI is in this repo. And the final version was built from scratch at December 2019. All of my Hackintoshes are able to dual-booting to Windows.
 
-[Version 2](#version-2) and [Version 3](#version-3) first of all were built for the iOS and macOS development. So it's stability and work predictability was a key requirement. After all of these years using Hackintosh for the development I only can say that it worth it.
+[Version 2](#version-2) and [Version 3](#version-3-pcpartpicker-link) first of all were built for the iOS and macOS development. So it's stability and work predictability was a key requirement. After all of these years using Hackintosh for the development I only can say that it worth it.
 
 ## Table of Content
 1. 👷 [The builds](#the-builds)
