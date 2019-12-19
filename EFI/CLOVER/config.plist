@@ -12,44 +12,10 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>AddDTGP</key>
-				<true/>
-				<key>AddHDMI</key>
-				<true/>
-				<key>AddPNLF</key>
-				<true/>
-				<key>DeleteUnused</key>
-				<true/>
-				<key>FixACST</key>
-				<true/>
-				<key>FixADP1</key>
-				<true/>
-				<key>FixDarwin</key>
-				<true/>
-				<key>FixDisplay</key>
-				<true/>
-				<key>FixFirewire</key>
-				<true/>
-				<key>FixHDA</key>
-				<true/>
-				<key>FixHPET</key>
-				<true/>
-				<key>FixIPIC</key>
-				<true/>
-				<key>FixLAN</key>
-				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixRegions</key>
-				<true/>
-				<key>FixS3D</key>
-				<true/>
-				<key>FixSBUS</key>
-				<true/>
 				<key>FixShutdown</key>
 				<true/>
-				<key>FixUSB</key>
-				<true/>
+				<key>FixWAK</key>
+				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -57,43 +23,87 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>LogHighSierra</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>aWdLRXdIUkU=</data>
-					<key>Replace</key>
-					<data>aWdLRXdPdEU=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>LogMojave</string>
+					<string>change XHCI to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>aWdLRXdIUkM=</data>
+					<data>
+					WEhDSQ==
+					</data>
 					<key>Replace</key>
-					<data>aWdLRXdPdEM=</data>
+					<data>
+					WEhDXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>AppleUSBXHCI</string>
+					<string>change XHC1 to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>ODNGQjBGMEYgODMwMzA1MDAgMDA=</data>
+					<data>
+					WEhDMQ==
+					</data>
 					<key>Replace</key>
-					<data>ODNGQjBGOTAgOTA5MDkwOTAgOTA=</data>
+					<data>
+					WEhDXw==
+					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change H_EC to EC (RehabMan)</string>
+					<string>change EC0 to EC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>SF9FQw==</data>
+					<data>
+					RUMwXw==
+					</data>
 					<key>Replace</key>
-					<data>RUNfXw==</data>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change SAT0 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change PEGP to GFX0</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UEVHUA==
+					</data>
+					<key>Replace</key>
+					<data>
+					R0ZYMA==
+					</data>
 				</dict>
 			</array>
 			<key>ReuseFFFF</key>
@@ -103,23 +113,13 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>CpuPm</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>Cpu0Ist</string>
+				<string>DMAR</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>MATS</string>
 			</dict>
 		</array>
-		<key>FixHeaders</key>
-		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -128,23 +128,19 @@
 			<false/>
 			<key>Generate</key>
 			<dict>
-				<key>APLF</key>
-				<true/>
-				<key>APSN</key>
-				<true/>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x3000 debug=0x100 keepsyms=1 -lilubetaall</string>
+		<string>dart=0 darkwake=1 agdpmod=pikera</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -156,12 +152,14 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>-1</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
+		<key>Type</key>
+		<string>0x0705</string>
 		<key>UseARTFrequency</key>
 		<false/>
 	</dict>
@@ -170,17 +168,28 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>1</integer>
+			<integer>11</integer>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
-		<key>FakeID</key>
+		<key>Properties</key>
 		<dict>
-			<key>WIFI</key>
-			<string>0x43a0</string>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AwCYPg==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
@@ -189,8 +198,12 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Language</key>
-		<string>en:0</string>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+			<string>Windows</string>
+		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -202,15 +215,18 @@
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
-		<key>Scan</key>
-		<true/>
 		<key>ScreenResolution</key>
 		<string>1680x1050</string>
 		<key>Theme</key>
-		<string>random</string>
+		<string>default</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
+		<key>EDID</key>
+		<dict>
+			<key>Inject</key>
+			<false/>
+		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -228,8 +244,10 @@
 		<key>AppleIntelCPUPM</key>
 		<false/>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>Debug</key>
+		<false/>
+		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelCpu</key>
 		<false/>
@@ -237,50 +255,85 @@
 		<false/>
 		<key>KernelPm</key>
 		<false/>
+		<key>KernelXCPM</key>
+		<false/>
+		<key>KextsToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Enable TRIM for SSD</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
+		<key>BooterConfig</key>
+		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3ff</string>
-		<key>MLB</key>
-		<string>REMOVED</string>
+		<string>0x67</string>
 		<key>ROM</key>
-		<string>REMOVED</string>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/03/2013</string>
+		<string>10/30/2019</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM142.88Z.0118.B00.1309031249</string>
+		<string>IM191.88Z.F000.B00.1910301745</string>
 		<key>Board-ID</key>
-		<string>Mac-27ADBB7B4CEE8E61</string>
+		<string>REMOVED</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
 		<string>REMOVED</string>
 		<key>BoardType</key>
 		<integer>10</integer>
+		<key>BoardVersion</key>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x13</string>
+		<string>0x09</string>
+		<key>EfiVersion</key>
+		<string>1037.60.50.0.0</string>
 		<key>Family</key>
 		<string>iMac</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFD8FF576</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFFDFFF7F</string>
+		<key>LocationInChassis</key>
+		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
+		<key>PlatformFeature</key>
+		<string>0x22</string>
 		<key>ProductName</key>
-		<string>iMac14,2</string>
+		<string>iMac19,1</string>
 		<key>SerialNumber</key>
 		<string>REMOVED</string>
 		<key>SmUUID</key>
 		<string>REMOVED</string>
-		<key>Trust</key>
-		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
