@@ -237,7 +237,7 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
     ```
 </details>
 
-* <details><summary>Cpu (<a href="/Galeas/hackintosh/blob/master/README.md#fix-cpu-type-in-about-this-mac">explanation</a>)</summary>
+* <details><summary>Cpu (<a href="#fix-cpu-type-in-about-this-mac">explanation</a>)</summary>
     <img src="images/clover3.png">
 
     ```xml
