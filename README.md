@@ -9,7 +9,9 @@ My first Hackintosh was built in 2008 or 2009 and I only remember that it was ve
 4. ⚙️ [Required kexts](#required-kexts)
 5. 🔮 [Clover configuration](#clover-configuration)
 6. 🛠 [Fix CPU Type in About This Mac](#fix-cpu-type-in-about-this-mac)
-7. 🔥 [Benchmarks](#benchmarks)
+7. ✅ [What works](#what-works)
+8. 🤬 [What doesn't work](#what-doesn't-work)
+9. 🔥 [Benchmarks](#benchmarks)
 
 ## The builds
 ### [Version 2](https://github.com/Galeas/hackintosh/tree/0c6fb64803c1e47f54158bc6fd50eb2e586dfaad)
@@ -361,6 +363,27 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 
 ## Fix CPU Type in About This Mac
 For some reason, About This Mac and System Report do not properly identify the processor and list it as an `Intel Core i9` instead of an `Intel Core i7`. This can easily be fixed by using Clover Configurator to set the `CPU Type` to `0x0705` and rebooting.
+
+## What works
+* Onboard audio
+* iMessage (with [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/))
+* Intel's QuickSync
+* HEVC
+* Wireless communications (because **Broadcom BCM94360** is used in real iMac and supports natively)
+   - WiFi
+   - Bluetooth LE
+   - Handoff
+   - Continuity
+   - AirDrop
+   - Airplay
+* Ethernet
+* CPU's native power management
+* NightShift
+
+## What doesn't work
+* DRM video in Safari (Netflix and Amazon Prime)
+   - works fine in Google Chrome
+
 
 ## Benchmarks
 * Geekbench 5
