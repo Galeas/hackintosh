@@ -69,6 +69,7 @@ This section is very trivial for the modern hackintoshing :)
 ## Clover configuration
 As far as this tutorial is made after macOS Catalina **10.15.2**, which natively supports [RDNA GPUs](https://en.wikipedia.org/wiki/RDNA_(microarchitecture)), was released, we don't have to make different Clover configurations for installation and regular running of our hackintosh. Anyway, Clover's `config.plist` has very simple content in our case.
 * <details><summary>ACPI</summary>
+    <img src="images/clover1.png">
     
     ```xml
     <key>ACPI</key>
@@ -210,7 +211,8 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 </details>
 
 * <details><summary>Boot</summary>
-    I'd also recommend to use <code>debug=0x100</code>, <code>keepsyms=1</code> and <code>-v</code> for an installation and post-installation debug.
+    I'd also recommend to use <code>debug=0x100</code>, <code>keepsyms=1</code> and <code>-v</code> for an installation and post-installation debug.<br/>
+    <img src="images/clover2.png">
 
     ```xml
     <key>Boot</key>
@@ -236,6 +238,7 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 </details>
 
 * <details><summary>Cpu (<a href="/Galeas/hackintosh/blob/master/README.md#fix-cpu-type-in-about-this-mac">explanation</a>)</summary>
+    <img src="images/clover3.png">
 
     ```xml
     <key>CPU</key>
@@ -249,6 +252,7 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 </details>
 
 * <details><summary>Devices</summary>
+    <img src="images/clover4.png">
 
     ```xml
     <key>Devices</key>
@@ -288,6 +292,7 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 </details>
 
 * <details><summary>Kernel and kexts patches</summary>
+    <img src="images/clover5.png">
   
     ```xml
     <key>KernelAndKextPatches</key>
@@ -333,14 +338,24 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
     ```
 </details>
 
-* Rt Variables
+* <details><summary>Rt Variables</summary>
+    <img src="images/clover6.png">
+
     - ROM - UseMacAdd0
     - BooterConfig - 0x28
     - CsrActiveConfig - 0x67
-* SMBIOS: Generate SMBIOS for iMac19,1
-* System Parameters
+</details>
+
+* <details><summary>SMBIOS: Generate SMBIOS for iMac19,1</summary>
+    <img src="images/clover7.png">
+</details>
+
+* <details><summary>System Parameters</summary>
+    <img src="images/clover8.png">
+
     - Inject Kexts - Yes
     - ✔︎ Inject System ID
+</details>
 
 **NOTE**: Fore more information you could visit [Coffee Lake Vanilla Hackintosh Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/coffee-lake)
 
@@ -355,6 +370,13 @@ For some reason, About This Mac and System Report do not properly identify the p
     * [OpenCL](https://browser.geekbench.com/v5/compute/344944): 45467
     * [Metal](https://browser.geekbench.com/v5/compute/344947): 37592
 * Cinebench R20: 
-    * Single Core: 474
-    * Multy Core: 3553
-* LuxMark (LuxBall): 30443
+    - <details><summary>Single Core: 474</summary>
+        <img src="images/cine2.png">
+    </details>
+    
+    - <details><summary>Multy Core: 3553</summary>
+        <img src="images/cine1.png">
+    </details>
+* <details><summary>LuxMark (LuxBall): 30443</summary>
+    <img src="images/lux.png">
+</details>
