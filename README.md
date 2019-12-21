@@ -366,7 +366,7 @@ As far as this tutorial is made after macOS Catalina **10.15.2**, which natively
 **NOTE**: Fore more information you could visit [Coffee Lake Vanilla Hackintosh Guide](https://hackintosh.gitbook.io/-r-hackintosh-vanilla-desktop-guide/config.plist-per-hardware/coffee-lake)
 
 ## Fix CPU Type in About This Mac
-Credits goes to [shiruken](https://github.com/shiruken) 
+Credits goes to [shiruken](https://github.com/shiruken/hackintosh#fix-cpu-type-in-about-this-mac) 
 
 For some reason, About This Mac and System Report do not properly identify the processor and list it as an `Intel Core i9` instead of an `Intel Core i7`. This can easily be fixed by using Clover Configurator to set the `CPU Type` to `0x0705` and rebooting.
 
