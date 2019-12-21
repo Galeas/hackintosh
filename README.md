@@ -29,7 +29,7 @@ In this guide only the latest build of Hackintosh will be described. Don't forge
 | RAM          | 2 x Team Elite DDR-3 1600 4 GB |
 | WiFi / BT    | Broadcom BCM94360 |
 
-### Version 3 ([PCPartPicker link](https://pcpartpicker.com/list/t3vkf9))
+### Version 3 ([PCPartPicker link](https://pcpartpicker.com/list/wDrNzN))
 | Birthday     | December 2019               |
 |--------------|-----------------------------|
 | SMBIOS Model | iMac19,1                    |
