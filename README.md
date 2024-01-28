@@ -37,7 +37,7 @@ In this guide only the latest build of Hackintosh will be described. Don't forge
 | CPU          | Intel Core i7-9700K         |
 | GPU          | Sapphire RX 5700XT Nitro+   |
 | RAM          | 2 x Crucial DDR-4 3200 8 GB |
-| WiFi / BT    | Broadcom BCM94360 |
+| WiFi / BT    | Broadcom BCM94360 -> Asus PCE-AX3000 |
 
 ## Make installation media
 1. Download [macOS Catalina](https://apps.apple.com/ru/app/macos-catalina/id1466841314?mt=12) installer from the Mac AppStore
